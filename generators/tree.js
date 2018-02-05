@@ -74,9 +74,9 @@ let tree = {
 };
 
 //plants
-tree.creatures.push(new EvolutionStage(-3, "Plant", "", "", ""));
-tree.creatures.push(new EvolutionStage(-2, "Mushroom", "", "", ""));
-tree.creatures.push(new EvolutionStage(-1, "Flower", "", "", ""));
+tree.creatures.push(new EvolutionStage(-3, "Pianta", "", "", ""));
+tree.creatures.push(new EvolutionStage(-2, "Fungo", "", "", ""));
+tree.creatures.push(new EvolutionStage(-1, "Insetto", "", "", ""));
 //lvl 1 - 3 creatures
 tree.creatures.push(new EvolutionStage(0, "Batterio", [-3], [3, 4], ""));
 tree.creatures.push(new EvolutionStage(1, "Paramecio", [-2], [5, 6], ""));
@@ -115,11 +115,11 @@ tree.creatures.push(new EvolutionStage(23, "Canguro", [], "", []));
 tree.creatures.push(new EvolutionStage(24, "Koala", [], "", []));
 tree.creatures.push(new EvolutionStage(25, "Cavallo", [], "", []));
 tree.creatures.push(new EvolutionStage(26, "Cervo", [], "", []));
-tree.creatures.push(new EvolutionStage(27, "undefined", [], "", []));
-tree.creatures.push(new EvolutionStage(28, "undefined", [], "", []));
+tree.creatures.push(new EvolutionStage(27, "Rospo", [], "", []));
+tree.creatures.push(new EvolutionStage(28, "Salamandra", [], "", []));
 //carnivori
 tree.creatures.push(new EvolutionStage(29, "Leone", [], "", []));
-tree.creatures.push(new EvolutionStage(30, "Tigre", [], "", []));
+tree.creatures.push(new EvolutionStage(30, "Leopardo", [], "", []));
 tree.creatures.push(new EvolutionStage(31, "Orso", [], "", []));
 tree.creatures.push(new EvolutionStage(32, "Lupo", [], "", []));
 tree.creatures.push(new EvolutionStage(33, "Squalo", [], "", []));
