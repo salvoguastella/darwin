@@ -3,6 +3,6 @@ const events = require("./classes/event.js");
 
 tree.getStatus();
 
-events.forEach(event => {
-    console.log(event.toString());
+events.forEach((event,index) => {
+    console.log((index+1)+") "+event.toString());
 });
