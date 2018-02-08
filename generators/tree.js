@@ -23,7 +23,7 @@ let tree = {
             // food
 
             if (creature.food !== null) {
-                output += "è "+creature.getDiet();
+                output += "è " + creature.getDiet();
                 if (typeof creature.food !== "object") output += " e mangia [" + creature.food + "], ";
                 else {
                     output += " e mangia [";
@@ -84,58 +84,58 @@ tree.creatures.push(new EvolutionStage(1, "Bruco", [-2], [], ""));
 tree.creatures.push(new EvolutionStage(2, "Pesce", [-1], [], ""));
 //lvl 2 - 6 creatures
 //erbivori
-tree.creatures.push(new EvolutionStage(3, "Foca", [], [], []));
-tree.creatures.push(new EvolutionStage(4, "Pecora", [], [], []));
+tree.creatures.push(new EvolutionStage(3, "Foca", [], [17, 18], [1, 8]));
+tree.creatures.push(new EvolutionStage(4, "Pecora", [], [11, 12], [6, 8]));
 //carnivori
-tree.creatures.push(new EvolutionStage(5, "Procione", [], [], []));
-tree.creatures.push(new EvolutionStage(6, "Furetto", [], [], []));
+tree.creatures.push(new EvolutionStage(5, "Procione", [], [9, 10], [1, 9]));
+tree.creatures.push(new EvolutionStage(6, "Furetto", [], [13, 14], [1, 8]));
 //onnivori
-tree.creatures.push(new EvolutionStage(7, "Echidna", [], [], []));
-tree.creatures.push(new EvolutionStage(8, "Anguilla", [], [], []));
+tree.creatures.push(new EvolutionStage(7, "Echidna", [], [19, 20], [1, 8]));
+tree.creatures.push(new EvolutionStage(8, "Anguilla", [], [15, 16], [3, 9]));
 //lvl 3 - 12 creatures
 //erbivori
-tree.creatures.push(new EvolutionStage(9, "Ippopotamo", [], [], []));
-tree.creatures.push(new EvolutionStage(10, "Opossum", [], [], []));
-tree.creatures.push(new EvolutionStage(11, "Capra", [], [], []));
-tree.creatures.push(new EvolutionStage(12, "Alpaca", [], [], []));
+tree.creatures.push(new EvolutionStage(9, "Ippopotamo", [], [21, 22], [7, 8]));
+tree.creatures.push(new EvolutionStage(10, "Opossum", [], [23, 24], [6, 7]));
+tree.creatures.push(new EvolutionStage(11, "Capra", [], [25, 26], [11, 12]));
+tree.creatures.push(new EvolutionStage(12, "Alpaca", [], [27, 28], [4, 6]));
 //carnivori
-tree.creatures.push(new EvolutionStage(13, "Gatto", [], [], []));
-tree.creatures.push(new EvolutionStage(14, "Volpe", [], [], []));
-tree.creatures.push(new EvolutionStage(15, "Salmone", [], [], []));
-tree.creatures.push(new EvolutionStage(16, "Varano", [], [], []));
+tree.creatures.push(new EvolutionStage(13, "Gatto", [], [29, 30], [4, 11]));
+tree.creatures.push(new EvolutionStage(14, "Volpe", [], [31, 32], [4, 6]));
+tree.creatures.push(new EvolutionStage(15, "Salmone", [], [33, 34], [7, 10]));
+tree.creatures.push(new EvolutionStage(16, "Varano", [], [35, 36], [1, 8]));
 //onnivori
-tree.creatures.push(new EvolutionStage(17, "Scimmia", [], [], []));
-tree.creatures.push(new EvolutionStage(18, "Beluga", [], [], []));
-tree.creatures.push(new EvolutionStage(19, "Pollo", [], [], []));
-tree.creatures.push(new EvolutionStage(20, "Topo", [], [], []));
+tree.creatures.push(new EvolutionStage(17, "Scimmia", [], [37, 38], [1, 6]));
+tree.creatures.push(new EvolutionStage(18, "Beluga", [], [39, 40], [7, 10]));
+tree.creatures.push(new EvolutionStage(19, "Pollo", [], [41, 42], [11, 12]));
+tree.creatures.push(new EvolutionStage(20, "Topo", [43, 44], [], [1, 6]));
 //lvl 4 - 24 creatures
 //erbivori
-tree.creatures.push(new EvolutionStage(21, "Elefante", [], "", []));
-tree.creatures.push(new EvolutionStage(22, "Rinoceronte", [], "", []));
-tree.creatures.push(new EvolutionStage(23, "Canguro", [], "", []));
-tree.creatures.push(new EvolutionStage(24, "Koala", [], "", []));
-tree.creatures.push(new EvolutionStage(25, "Cavallo", [], "", []));
-tree.creatures.push(new EvolutionStage(26, "Cervo", [], "", []));
-tree.creatures.push(new EvolutionStage(27, "Bisonte", [], "", []));
-tree.creatures.push(new EvolutionStage(28, "Cammello", [], "", []));
+tree.creatures.push(new EvolutionStage(21, "Elefante", [], "", [2, 0, 10]));
+tree.creatures.push(new EvolutionStage(22, "Rinoceronte", [], "", [2, 2, 3]));
+tree.creatures.push(new EvolutionStage(23, "Canguro", [], "", [8, 3, 11]));
+tree.creatures.push(new EvolutionStage(24, "Koala", [], "", [0, 5, 9]));
+tree.creatures.push(new EvolutionStage(25, "Cavallo", [], "", [5, 2, 12]));
+tree.creatures.push(new EvolutionStage(26, "Cervo", [], "", [2, 2, 1]));
+tree.creatures.push(new EvolutionStage(27, "Bisonte", [], "", [2, 2, 10]));
+tree.creatures.push(new EvolutionStage(28, "Cammello", [], "", [11, 10, 8]));
 //carnivori
-tree.creatures.push(new EvolutionStage(29, "Leone", [], "", []));
-tree.creatures.push(new EvolutionStage(30, "Leopardo", [], "", []));
-tree.creatures.push(new EvolutionStage(31, "Orso", [], "", []));
-tree.creatures.push(new EvolutionStage(32, "Lupo", [], "", []));
-tree.creatures.push(new EvolutionStage(33, "Squalo", [], "", []));
-tree.creatures.push(new EvolutionStage(34, "Pesce Spada", [], "", []));
-tree.creatures.push(new EvolutionStage(35, "Coccodrillo", [], "", []));
-tree.creatures.push(new EvolutionStage(36, "Tartaruga", [], "", []));
+tree.creatures.push(new EvolutionStage(29, "Leone", [], "", [6, 5, 11]));
+tree.creatures.push(new EvolutionStage(30, "Leopardo", [], "", [11, 11, 4]));
+tree.creatures.push(new EvolutionStage(31, "Orso", [], "", [9, 7, 10]));
+tree.creatures.push(new EvolutionStage(32, "Lupo", [], "", [1, 4, 0]));
+tree.creatures.push(new EvolutionStage(33, "Squalo", [], "", [4, 0, 7]));
+tree.creatures.push(new EvolutionStage(34, "Pesce Spada", [], "", [2, 9, 12]));
+tree.creatures.push(new EvolutionStage(35, "Coccodrillo", [], "", [4, 4, 10]));
+tree.creatures.push(new EvolutionStage(36, "Tartaruga", [], "", [3, 3, 7]));
 //onnivori
-tree.creatures.push(new EvolutionStage(37, "Gorilla", [], "", []));
-tree.creatures.push(new EvolutionStage(38, "Umanoide", [], "", []));
-tree.creatures.push(new EvolutionStage(39, "Balena", [], "", []));
-tree.creatures.push(new EvolutionStage(40, "Delfino", [], "", []));
-tree.creatures.push(new EvolutionStage(41, "Aquila", [], "", []));
-tree.creatures.push(new EvolutionStage(42, "Struzzo", [], "", []));
-tree.creatures.push(new EvolutionStage(43, "Pipistrello", [], "", []));
-tree.creatures.push(new EvolutionStage(44, "Capibara", [], "", []));
+tree.creatures.push(new EvolutionStage(37, "Gorilla", [], "", [3, 6, 4]));
+tree.creatures.push(new EvolutionStage(38, "Umanoide", [], "", [0, 5, 12]));
+tree.creatures.push(new EvolutionStage(39, "Balena", [], "", [10, 9, 3]));
+tree.creatures.push(new EvolutionStage(40, "Delfino", [], "", [11, 0, 2]));
+tree.creatures.push(new EvolutionStage(41, "Aquila", [], "", [5, 5, 4]));
+tree.creatures.push(new EvolutionStage(42, "Struzzo", [], "", [10, 3, 12]));
+tree.creatures.push(new EvolutionStage(43, "Pipistrello", [], "", [0, 5, 12]));
+tree.creatures.push(new EvolutionStage(44, "Capibara", [], "", [0, 4, 7]));
 
 
 module.exports = tree;
