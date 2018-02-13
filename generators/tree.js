@@ -107,7 +107,7 @@ tree.creatures.push(new EvolutionStage(16, "Varano", [], [35, 36], [1, 8]));
 tree.creatures.push(new EvolutionStage(17, "Scimmia", [], [37, 38], [1, 6]));
 tree.creatures.push(new EvolutionStage(18, "Beluga", [], [39, 40], [7, 10]));
 tree.creatures.push(new EvolutionStage(19, "Pollo", [], [41, 42], [11, 12]));
-tree.creatures.push(new EvolutionStage(20, "Topo", [43, 44], [], [1, 6]));
+tree.creatures.push(new EvolutionStage(20, "Topo", [], [43, 44], [1, 6]));
 //lvl 4 - 24 creatures
 //erbivori
 tree.creatures.push(new EvolutionStage(21, "Elefante", [], "", [2, 0, 10]));
