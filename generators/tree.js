@@ -84,14 +84,14 @@ tree.creatures.push(new EvolutionStage(1, "Bruco", [-2], [], ""));
 tree.creatures.push(new EvolutionStage(2, "Pesce", [-1], [], ""));
 //lvl 2 - 6 creatures
 //erbivori
-tree.creatures.push(new EvolutionStage(3, "Foca", [], [17, 18], [1, 8]));
-tree.creatures.push(new EvolutionStage(4, "Pecora", [], [11, 12], [6, 8]));
+tree.creatures.push(new EvolutionStage(3, "Foca", [-1,5], [17, 18], [1, 8]));
+tree.creatures.push(new EvolutionStage(4, "Pecora", [-3], [11, 12], [6, 8]));
 //carnivori
-tree.creatures.push(new EvolutionStage(5, "Procione", [], [9, 10], [1, 9]));
-tree.creatures.push(new EvolutionStage(6, "Furetto", [], [13, 14], [1, 8]));
+tree.creatures.push(new EvolutionStage(5, "Procione", [-1], [9, 10], [1, 9]));
+tree.creatures.push(new EvolutionStage(6, "Furetto", [4,7], [13, 14], [1, 8]));
 //onnivori
-tree.creatures.push(new EvolutionStage(7, "Echidna", [], [19, 20], [1, 8]));
-tree.creatures.push(new EvolutionStage(8, "Anguilla", [], [15, 16], [3, 9]));
+tree.creatures.push(new EvolutionStage(7, "Echidna", [-2,4], [19, 20], [1, 8]));
+tree.creatures.push(new EvolutionStage(8, "Anguilla", [3,5], [15, 16], [3, 9]));
 //lvl 3 - 12 creatures
 //erbivori
 tree.creatures.push(new EvolutionStage(9, "Ippopotamo", [], [21, 22], [7, 8]));

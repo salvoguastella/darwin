@@ -5,9 +5,10 @@ const objectives = require("./generators/objectives.js");
 tree.getStatus();
 
 console.log("\n");
-console.log(events.length + " events available");
+console.log(events.total() + " events available");
 console.log("\n");
 
+/*
 events.forEach((event, index) => {
     console.log((index + 1) + ") " + event.toString());
 });
@@ -17,7 +18,6 @@ console.log(objectives.elements.length + " objectives available");
 console.log("\n");
 
 
-/*
 objectives.elements.forEach((objective, index) => {
     let printString = `${(index + 1)}) ${objective.points} punti: `;
     objective.requirements.forEach((requirement, i) => {

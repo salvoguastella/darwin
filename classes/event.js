@@ -27,6 +27,8 @@ let events = {
             "Ogni giocatore puó giocare una fase Accoppiamento extra durante il proprio turno"),
         new Event("Incidente",
             "Ogni giocatore DEVE far accoppiare tutte le proprie creature durante il proprio turno"),
+        new Event("Avanzamento della specie",
+            "Ogni giocatore puó conteggiare anche le creature avversarie durante la fase di Accoppiamento"),
     ],
     life:[
         new Event("Moria",
@@ -34,7 +36,9 @@ let events = {
         new Event("Antenati",
             "Ogni giocatore puó generare fino a 2 creature semplici all'inizio del proprio turno invece di 1"),
         new Event("Duro a morire",
-            "L'insufficienza di cibo non causa enstinzione"),
+            "L'insufficienza di cibo causa una morte in meno, ma non meno di 1"),
+        new Event("La legge del piú forte",
+            "Ogni giocatore distrugge metá della propria popolazione di una specie che controlla"),
     ],
     evolution:[
         new Event("Involuzione",
@@ -43,11 +47,16 @@ let events = {
             "Ogni giocatore sceglie un Tratto Evolutivo dagli scarti e lo aggiunge alla propria riserva"),
         new Event("Gene debole",
             "Ogni giocatore scarta un Tratto Evolutivo dalla propria riserva"),
+        new Event("Mutazione",
+            "Ogni giocatore scarta i propri Tratti Evolutivi dalla propria riserva e ne pesca lo stesso numero"),
     ],
     other:[
         new Event("Meteora",
             "Ogni giocatore gioca un ultimo turno, quindi la partita termina")
-    ]
+    ],
+    total(){
+        return this.evolution.length+this.food.length+this.life.length+this.mating.length+this.other.length;
+    }
 };
 
 module.exports = events;
