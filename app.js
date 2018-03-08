@@ -20,7 +20,7 @@ objectives.elements.forEach((objective, index) => {
     let printString = `${(index + 1)}) ${objective.points} punti: `;
     objective.requirements.forEach((requirement, i) => {
         let creature = tree.exists(requirement.id);
-        if (creature) printString += requirement.quantity + " " + creature.name;
+        if (creature) printString += requirement.multiplier + " " + creature.name;
         if (i < objective.requirements.length - 1) printString += ", ";
     });
     console.log(printString);

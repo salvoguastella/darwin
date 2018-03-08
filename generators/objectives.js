@@ -6,11 +6,11 @@ let objectives = {
 };
 
 objectives.elements.push(new Objective(10, [
-    { id: 3, qty: 2 },
-    { id: 4, qty: 5 }
-], "Do something"));
-objectives.elements.push(new Objective(10, [], "Do something"));
-objectives.elements.push(new Objective(10, [], "Do something"));
+    { id: 3, mul: 2 },
+    { id: 4, mul: 5 }
+]));
+objectives.elements.push(new Objective(10, []));
+objectives.elements.push(new Objective(10, []));
 
 
 module.exports = objectives;

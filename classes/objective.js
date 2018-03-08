@@ -1,7 +1,7 @@
 class Requirement {
-    constructor(id, quantity) {
+    constructor(id, multiplier) {
         this.id = id;
-        this.quantity = quantity
+        this.multiplier = multiplier
     }
 }
 
@@ -11,7 +11,7 @@ class Objective {
         this.requirements = [];
         if (requirements !== undefined && requirements != "" && typeof requirements === "object") {
             requirements.forEach(r => {
-                this.requirements.push(new Requirement(r.id, r.qty));
+                this.requirements.push(new Requirement(r.id, r.mul));
             });
         }
     }
