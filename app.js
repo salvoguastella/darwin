@@ -16,6 +16,8 @@ console.log("\n");
 console.log(objectives.elements.length + " objectives available");
 console.log("\n");
 
+
+/*
 objectives.elements.forEach((objective, index) => {
     let printString = `${(index + 1)}) ${objective.points} punti: `;
     objective.requirements.forEach((requirement, i) => {
@@ -25,3 +27,4 @@ objectives.elements.forEach((objective, index) => {
     });
     console.log(printString);
 });
+*/
