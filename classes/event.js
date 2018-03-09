@@ -12,7 +12,7 @@ class Event {
 let events = {
     food: [
         new Event("Abbondanza",
-            "All'inizio del proprio turno, ogni giocatore aggiunge 3 unitá di cibo alla riserva nel modo in cui vuole"),
+            "Ogni giocatore aggiunge 5 unitá di cibo alla riserva nel modo in cui vuole"),
         new Event("Fame",
             "Le creature consumano un cibo extra"),
         new Event("Cannibalismo",
@@ -22,13 +22,13 @@ let events = {
     ],
     mating: [
         new Event("Fertilitá",
-            "L'accoppiamento genera una creatura extra"),
+            "La riproduzione genera una creatura extra"),
         new Event("Sexy",
-            "Ogni giocatore puó giocare una fase Accoppiamento extra durante il proprio turno"),
+            "Ogni giocatore puó giocare una fase Riproduzione extra durante il proprio turno"),
         new Event("Incidente",
-            "Ogni giocatore DEVE far accoppiare tutte le proprie creature durante il proprio turno"),
+            "Ogni giocatore DEVE far riprodurre tutte le proprie creature durante la fase di Riproduzione"),
         new Event("Avanzamento della specie",
-            "Ogni giocatore puó conteggiare anche le creature avversarie durante la fase di Accoppiamento"),
+            "Ogni giocatore conteggia anche le creature avversarie come proprie durante la fase di Riproduzione"),
     ],
     life:[
         new Event("Moria",

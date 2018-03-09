@@ -8,6 +8,10 @@ console.log("\n");
 console.log(events.total() + " events available");
 console.log("\n");
 
+//one event per card.
+//two active events per turn after first turn
+
+
 /*
 events.forEach((event, index) => {
     console.log((index + 1) + ") " + event.toString());
